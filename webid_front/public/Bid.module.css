@@ -1,0 +1,59 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100dvh;
+}
+
+.main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bt1 {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #E20000;
+    color: #fff;
+}
+
+.bt2 {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #042C50;
+    color: #fff;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-around;
+}
+
+.btns button:first-child:hover{
+    background-color: #990000;
+}
+
+.btns button:last-child:hover {
+    background-color: #010c16;
+}
+
+@media screen and (max-width: 999px) {
+    .main{
+        flex-direction: column;
+    }
+
+    .btns{
+        justify-content: space-evenly;
+        
+    }
+
+    .bt2 {
+        padding: 25px;
+        font-size: 19px;
+    }
+}
